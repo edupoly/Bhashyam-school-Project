@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const schoolZonalApi = createApi({
   reducerPath: 'schoolZonalApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4600/zonals' }),
+  baseQuery: fetchBaseQuery({ baseUrl: `${process.env.REACT_APP_API}/zonals` }),
   endpoints: (builder) => ({
     getzonals: builder.query({
       query: () => `/`,
