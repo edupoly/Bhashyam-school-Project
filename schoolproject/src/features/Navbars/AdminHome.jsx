@@ -13,6 +13,7 @@ function AdminHome() {
     <div>
          <div>
       <nav className="navbar navbar-expand-lg bg-light shadow" style={{background:'linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%)'}}>
+        
         <div className="container-fluid">
             <Link to='/' className="navbar-brand text-light">INTERNATIONAL SCHOOL</Link>
             <Link className="navbar-brand text-light" to="/home">Home</Link>
