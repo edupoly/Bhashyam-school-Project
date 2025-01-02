@@ -13,19 +13,13 @@ import AddBranch from './features/AddBranch.jsx';
 import AddZonal from './features/AddZonal.jsx';
 import Complaints from './features/Complaints.jsx';
 import Callcenter from './features/Callcenter.jsx';
-import ZonalOfficers from './features/Zonalofficers/ZonalOfficers.jsx';
-import FirstZonal from './features/Zonalofficers/FirstZonal.jsx';
-import SecondZonal from './features/Zonalofficers/SecondZonal.jsx';
-import ThirdZonal from './features/Zonalofficers/ThirdZonal.jsx';
 import Login from './features/Login.jsx';
-import Signup from './features/Signup.jsx';
 import Principal from './features/Principal.jsx';
 import EditBranch from './features/EditBranch.jsx';
 import HomeLogin from './features/Auth/HomeLogin.jsx';
 import ZonalLogin from './features/Auth/ZonalLogin.jsx';
 import Zonal from './features/Zonalofficers/Zonal.jsx';
 import AdminHome from './features/Navbars/AdminHome.jsx';
-import AdminNavbar from './features/Navbars/AdminNavbar.jsx';
 import ProtectedRoute from './features/ProtectedRoute.jsx';
 
 
@@ -74,13 +68,11 @@ const router = createBrowserRouter([
           {
             path : '/zonalofficer',
             element : <ZonalLogin/>
+          },
+          {
+            path : '/login',
+            element : <Login/>
           }
-        ,
-      
-      {
-        path : '/login',
-        element : <Login/>
-      }
     ]
   },
   

@@ -44,9 +44,9 @@ function AdminHome() {
                 {/* <li className='nav-item'>
                     <Link to='/complaint' className="nav-link text-light">Add Complaint</Link>
                 </li> */}
-                <li className='nav-item'>
+                {/* <li className='nav-item'>
                     <Link to='/' className="btn btn-outline-light" onClick={logout}>Logout</Link>
-                </li>
+                </li> */}
             </ul>
             </div>
         </div>
