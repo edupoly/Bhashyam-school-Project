@@ -109,13 +109,13 @@ function Principal() {
                                                   {
                                                     newstatus.code === 'assigned'
                                                     && <>
-                                                        <button className='btn btn-warning' onClick={()=>{acceptCom(d._id)}}>Accept</button>
+                                                        <button className='btn btn-warning shadow' onClick={()=>{acceptCom(d._id)}}>Accept</button>
                                                     </>
                                                   }
                                                   {
                                                     newstatus.code === 'accepted'
                                                     && <>
-                                                        <button className='btn btn-warning' onClick={()=>{solveCom(d._id)}}>Solve</button>
+                                                        <button className='btn btn-warning shadow' onClick={()=>{solveCom(d._id)}}>Solve</button>
                                                     </>
                                                   }
                                                   {

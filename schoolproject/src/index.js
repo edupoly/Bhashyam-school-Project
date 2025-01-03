@@ -55,7 +55,7 @@ const router = createBrowserRouter([
           },
           {
             path : '/allcomplaints',
-            element : <ProtectedRoute element={<Callcenter/>} allowedRoles={['Customercare']}/>
+            element : <Callcenter/>
           },
           {
             path :'/zonals',

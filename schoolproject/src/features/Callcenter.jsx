@@ -106,7 +106,7 @@ function Callcenter() {
                                             {
                                                 [...d.status].sort((a,b)=>{ return a.timestamp < b.timestamp ? 1 : -1})[0].code === 'solved'
                                                 ? (
-                                                    <button className='btn btn-success' onClick={()=>{comclosed(d._id)}}>Close</button>
+                                                    <button className='btn btn-success shadow' onClick={()=>{comclosed(d._id)}}>Close</button>
                                                 ) : [...d.status].sort((a,b)=>{return a.timestamp < b.timestamp ? 1 : -1})[0].code !== 'closed' 
                                                 ? ( <b>Pending</b> ) : null
                                             }

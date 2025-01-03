@@ -2,11 +2,13 @@ import React from 'react'
 import { Form, Formik,Field } from 'formik'
 import { useGetbranchesQuery } from '../services/schoolApi'
 import { useAddComplaintMutation } from '../services/complaintApi';
+import { useNavigate } from 'react-router-dom';
 
 function Complaints() {
     var {isLoading,data} = useGetbranchesQuery();
     var [addComplaintFn] = useAddComplaintMutation();
     console.log(isLoading,data);
+    var navigate = useNavigate();
     var initialValues = {
         studentname : '',
         mobile : '',
@@ -18,6 +20,7 @@ function Complaints() {
         addComplaintFn(values).then((res)=>{
             console.log(res);
         })
+        navigate('/allcomplaints');
     }
   return (
     <div>

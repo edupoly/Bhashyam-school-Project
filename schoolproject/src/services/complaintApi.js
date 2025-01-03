@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const complaintApi = createApi({
   reducerPath: 'complaintApi',
-  baseQuery: fetchBaseQuery({ baseUrl: `${process.env.REACT_APP_API}/complaints` }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4600/complaints' }),
   endpoints: (builder) => ({
     getComplaints: builder.query({
       query: ({branches, status, mobile}) => {

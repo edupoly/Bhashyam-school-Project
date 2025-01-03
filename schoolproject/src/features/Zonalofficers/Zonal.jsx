@@ -105,7 +105,7 @@ function Zonal() {
                                             {
                                                 [...b.status].sort((a,b)=>{ return a.timestamp < b.timestamp ? 1 : -1})[0].code === 'registered'
                                                 && <>
-                                                  <button className='btn btn-warning' onClick={()=>{assignCom(b._id)}}>Assign To Principal</button>
+                                                  <button className='btn btn-warning shadow' onClick={()=>{assignCom(b._id)}}>Assign To Principal</button>
                                                 </>
                                             }
                                             {
