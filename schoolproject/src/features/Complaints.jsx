@@ -19,8 +19,8 @@ function Complaints() {
         console.log(values);
         addComplaintFn(values).then((res)=>{
             console.log(res);
+            navigate('/allcomplaints');
         })
-        navigate('/allcomplaints');
     }
   return (
     <div>
