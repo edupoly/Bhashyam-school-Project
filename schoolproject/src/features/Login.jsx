@@ -23,7 +23,7 @@ function Login() {
           window.localStorage.setItem("name", res.data.principalname);
           window.localStorage.setItem("role", res.data.role);
           navigate("/principal");
-        } else if(res.data.role == "Customercare"){
+        } else if(res.data.role == "customercare"){
           window.localStorage.setItem("token",res.data.token);
           window.localStorage.setItem("name",res.data.role)
           window.localStorage.setItem("role", res.data.role);
