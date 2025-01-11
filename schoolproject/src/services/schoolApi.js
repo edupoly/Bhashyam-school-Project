@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const schoolApi = createApi({
   reducerPath: 'schoolApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4600/branches' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://bhashyam-backend-production.up.railway.app/branches' }),
   endpoints: (builder) => ({
     getbranches: builder.query({
       query: () => `/`,
